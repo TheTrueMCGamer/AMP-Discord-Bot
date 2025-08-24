@@ -250,7 +250,7 @@ namespace DiscordBotPlugin
                     .WithName("start-server")
                     .WithDescription("Start the Server"));
 
-                commandList.Add(new SlashCommandBuilder()
+                /*commandList.Add(new SlashCommandBuilder()
                     .WithName("stop-server")
                     .WithDescription("Stop the Server"));
 
@@ -264,17 +264,17 @@ namespace DiscordBotPlugin
 
                 commandList.Add(new SlashCommandBuilder()
                     .WithName("update-server")
-                    .WithDescription("Update the Server"));
+                    .WithDescription("Update the Server"));*/
 
                 commandList.Add(new SlashCommandBuilder()
                     .WithName("show-playtime")
                     .WithDescription("Show the Playtime Leaderboard")
                     .AddOption("playername", ApplicationCommandOptionType.String, "Get playtime for a specific player", isRequired: false));
 
-                commandList.Add(new SlashCommandBuilder()
+                /*commandList.Add(new SlashCommandBuilder()
                     .WithName("console")
                     .WithDescription("Send a Console Command to the Application")
-                    .AddOption("value", ApplicationCommandOptionType.String, "Command text", isRequired: true));
+                    .AddOption("value", ApplicationCommandOptionType.String, "Command text", isRequired: true));*/
 
                 commandList.Add(new SlashCommandBuilder()
                     .WithName("full-playtime-list")
@@ -285,11 +285,11 @@ namespace DiscordBotPlugin
                     .WithName("take-backup")
                     .WithDescription("Take a backup of the instance"));
 
-                commandList.Add(new SlashCommandBuilder()
+                /*commandList.Add(new SlashCommandBuilder()
                     .WithName("remove-playtime")
                     .WithDescription("Remove Playtime (all or specific player)")
                     .AddOption("all", ApplicationCommandOptionType.Boolean, "Remove all playtime data?", isRequired: true)
-                    .AddOption("playername", ApplicationCommandOptionType.String, "Player to remove", isRequired: false));
+                    .AddOption("playername", ApplicationCommandOptionType.String, "Player to remove", isRequired: false));*/
             }
             else
             {
@@ -317,7 +317,7 @@ namespace DiscordBotPlugin
                         .WithName("start-server")
                         .WithDescription("Start the Server")
                         .WithType(ApplicationCommandOptionType.SubCommand))
-                    .AddOption(new SlashCommandOptionBuilder()
+                    /*.AddOption(new SlashCommandOptionBuilder()
                         .WithName("stop-server")
                         .WithDescription("Stop the Server")
                         .WithType(ApplicationCommandOptionType.SubCommand))
@@ -332,17 +332,17 @@ namespace DiscordBotPlugin
                     .AddOption(new SlashCommandOptionBuilder()
                         .WithName("update-server")
                         .WithDescription("Update the Server")
-                        .WithType(ApplicationCommandOptionType.SubCommand))
+                        .WithType(ApplicationCommandOptionType.SubCommand))*/
                     .AddOption(new SlashCommandOptionBuilder()
                         .WithName("show-playtime")
                         .WithDescription("Show the Playtime Leaderboard")
                         .WithType(ApplicationCommandOptionType.SubCommand)
                         .AddOption("playername", ApplicationCommandOptionType.String, "Get playtime for a specific player", isRequired: false))
-                    .AddOption(new SlashCommandOptionBuilder()
+                    /*.AddOption(new SlashCommandOptionBuilder()
                         .WithName("console")
                         .WithDescription("Send a Console Command to the Application")
                         .WithType(ApplicationCommandOptionType.SubCommand)
-                        .AddOption("value", ApplicationCommandOptionType.String, "Command text", isRequired: true))
+                        .AddOption("value", ApplicationCommandOptionType.String, "Command text", isRequired: true))*/
                     .AddOption(new SlashCommandOptionBuilder()
                         .WithName("full-playtime-list")
                         .WithDescription("Full Playtime List")
@@ -352,12 +352,12 @@ namespace DiscordBotPlugin
                         .WithName("take-backup")
                         .WithDescription("Take a backup of the instance")
                         .WithType(ApplicationCommandOptionType.SubCommand))
-                    .AddOption(new SlashCommandOptionBuilder()
+                    /*.AddOption(new SlashCommandOptionBuilder()
                         .WithName("remove-playtime")
                         .WithDescription("Remove Playtime (all or specific player)")
                         .WithType(ApplicationCommandOptionType.SubCommand)
                         .AddOption("all", ApplicationCommandOptionType.Boolean, "Remove all playtime data?", isRequired: true)
-                        .AddOption("playername", ApplicationCommandOptionType.String, "Player to remove", isRequired: false));
+                        .AddOption("playername", ApplicationCommandOptionType.String, "Player to remove", isRequired: false));*/
 
                     // Add the base command to the command list
                     commandList.Add(baseCommand);
