@@ -47,7 +47,7 @@ namespace DiscordBotPlugin
         /// </summary>
         /// <param name="msg">Command to send to the server</param>
         /// <returns>Task</returns>
-        public Task SendConsoleCommand(SocketSlashCommand msg)
+        /*public Task SendConsoleCommand(SocketSlashCommand msg)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace DiscordBotPlugin
                 // Return a completed task to fulfill the method signature
                 return Task.CompletedTask;
             }
-        }
+        */}
 
         /// <summary>
         /// Send a chat message to the AMP instance, only for Minecraft for now
@@ -100,7 +100,7 @@ namespace DiscordBotPlugin
         /// <param name="author">Discord name of the sender</param>
         /// <param name="msg">Message to send</param>
         /// <returns>Task</returns>
-        public Task SendChatCommand(string author, string msg)
+        /*public Task SendChatCommand(string author, string msg)
         {
             try
             {
@@ -135,7 +135,7 @@ namespace DiscordBotPlugin
                 // Return a completed task to fulfill the method signature
                 return Task.CompletedTask;
             }
-        }
+        }*/
 
         /// <summary>
         /// Hook into LocalFileBackupPlugin events and request a backup
@@ -174,7 +174,7 @@ namespace DiscordBotPlugin
         /// Manages the server by sending a private message to the user with a link to the management panel.
         /// </summary>
         /// <param name="arg">The SocketMessageComponent argument.</param>
-        public async Task ManageServer(SocketMessageComponent arg)
+        /*public async Task ManageServer(SocketMessageComponent arg)
         {
             if (arg == null || arg.User == null)
             {
@@ -212,7 +212,7 @@ namespace DiscordBotPlugin
                 }
             }
         }
-    }
+    }*/
 
     public class CommandHandler
     {
